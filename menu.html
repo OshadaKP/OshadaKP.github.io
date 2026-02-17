@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Menu | The Savory Cafe</title>
+  </head>
+
+  <body>
+    <nav class="navBar">
+      <span class="theName">The Savory Cafe</span>
+      <div class="navLinks">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="about.html">About Us</a>
+      </div>
+    </nav>
+
+    <header class="pageHero">
+      <img src="images/menu-hero.jpg" alt="Menu" />
+      <div class="pageHeroOverlay"></div>
+      <div class="pageHeroContent">
+        <div class="pageHeroInner">
+          <h1 class="pageHeroTitle">Our Menu</h1>
+          <p class="pageHeroText">
+            Comfort meals, fresh bites, and coffee that hits right. Prices are
+            placeholders — change them anytime.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container menuWrap">
+        <!--Left menu navigation-->
+        <aside class="card menuNav">
+          <span class="badge">Categories</span>
+          <div style="margin-top: 14px">
+            <a href="#coffee">☕ Coffee</a>
+            <a href="#breakfast">🍳 Breakfast</a>
+            <a href="#mains">🍛 Mains</a>
+            <a href="#desserts">🍰 Desserts</a>
+          </div>
+          <hr class="hrGlow" />
+          <p class="smallNote">
+            You can add more categories by copying a section on the right.
+          </p>
+        </aside>
+
+        <!--Right menu content-->
+        <section class="card">
+          <p class="smallNote" style="margin: 0 0 12px">
+            <span class="badge">Note</span>
+            Items below are samples. Replace names/descriptions/prices.
+          </p>
+
+          <div id="coffee" style="margin-top: 10px">
+            <h2 class="menuCategoryTitle">Coffee</h2>
+            <div class="menuList">
+              <div class="card">
+                <div class="menuItem">
+                  <p class="menuItemName">Cappuccino</p>
+                  <span class="menuPrice">Rs. 850</span>
+                  <p class="menuItemDesc">
+                    Espresso with steamed milk and rich foam.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="menuItem">
+                  <p class="menuItemName">Iced Latte</p>
+                  <span class="menuPrice">Rs. 950</span>
+                  <p class="menuItemDesc">
+                    Chilled espresso + milk, smooth and refreshing.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="menuItem">
+                  <p class="menuItemName">Mocha</p>
+                  <span class="menuPrice">Rs. 1050</span>
+                  <p class="menuItemDesc">
+                    Chocolate + espresso + milk for a sweet kick.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="hrGlow" />
+
+          <div id="breakfast">
+            <h2 class="menuCategoryTitle">Breakfast</h2>
+            <div class="menuList">
+              <div class="card">
+                <div class="menuItem">
+                  <p class="menuItemName">Savory Omelette</p>
+                  <span class="menuPrice">Rs. 1350</span>
+                  <p class="menuItemDesc">
+                    Eggs, veggies, cheese — served with toast.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="menuItem">
+                  <p class="menuItemName">Pancakes</p>
+                  <span class="menuPrice">Rs. 1450</span>
+                  <p class="menuItemDesc">
+                    Fluffy stack with honey or syrup (your choice).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="hrGlow" />
+
+          <div id="mains">
+            <h2 class="menuCategoryTitle">Mains</h2>
+            <div class="menuList">
+              <div class="card">
+                <div class="menuItem">
+                  <p class="menuItemName">Grilled Chicken Bowl</p>
+                  <span class="menuPrice">Rs. 1950</span>
+                  <p class="menuItemDesc">
+                    Juicy chicken, rice, greens, signature sauce.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="menuItem">
+                  <p class="menuItemName">Creamy Pasta</p>
+                  <span class="menuPrice">Rs. 1750</span>
+                  <p class="menuItemDesc">
+                    Cream sauce, herbs, and optional extra cheese.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="hrGlow" />
+
+          <div id="desserts">
+            <h2 class="menuCategoryTitle">Desserts</h2>
+            <div class="menuList">
+              <div class="card">
+                <div class="menuItem">
+                  <p class="menuItemName">Chocolate Lava Cake</p>
+                  <span class="menuPrice">Rs. 1250</span>
+                  <p class="menuItemDesc">
+                    Warm, gooey center with ice cream (optional).
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="menuItem">
+                  <p class="menuItemName">Cheesecake Slice</p>
+                  <span class="menuPrice">Rs. 1150</span>
+                  <p class="menuItemDesc">
+                    Creamy classic with a light topping.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p class="smallNote" style="margin-top: 16px">
+              Allergy note: add your real allergy information here (nuts, dairy,
+              gluten, etc.)
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

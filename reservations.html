@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Reservations | The Savory Cafe</title>
+  </head>
+
+  <body>
+    <nav class="navBar">
+      <span class="theName">The Savory Cafe</span>
+      <div class="navLinks">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reservations.html" class="active">Reservations</a>
+        <a href="about.html">About Us</a>
+      </div>
+    </nav>
+
+    <header class="pageHero">
+      <img src="images/reserve-hero.jpg" alt="Reservations" />
+      <div class="pageHeroOverlay"></div>
+      <div class="pageHeroContent">
+        <div class="pageHeroInner">
+          <h1 class="pageHeroTitle">Reservations</h1>
+          <p class="pageHeroText">
+            Book your table in seconds. (This form is front-end only — later we
+            can connect it to email / database.)
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container grid2">
+        <section class="card">
+          <span class="badge">Book a Table</span>
+          <h2 class="sectionTitle" style="margin-top: 12px">
+            Reservation Form
+          </h2>
+
+          <form>
+            <div class="formGrid">
+              <div>
+                <label for="name">Full Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="phone">Phone Number</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="+94 xx xxx xxxx"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="date">Date</label>
+                <input id="date" name="date" type="date" required />
+              </div>
+
+              <div>
+                <label for="time">Time</label>
+                <input id="time" name="time" type="time" required />
+              </div>
+
+              <div>
+                <label for="guests">Guests</label>
+                <select id="guests" name="guests" required>
+                  <option value="" selected disabled>Select guests</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6+</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="occasion">Occasion</label>
+                <select id="occasion" name="occasion">
+                  <option value="" selected>No special occasion</option>
+                  <option>Birthday</option>
+                  <option>Anniversary</option>
+                  <option>Business</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="formRowFull">
+                <label for="notes">Notes (optional)</label>
+                <textarea
+                  id="notes"
+                  name="notes"
+                  placeholder="Any seating requests, allergies, etc."
+                ></textarea>
+              </div>
+
+              <div class="formRowFull">
+                <button type="submit" class="primaryBtn">
+                  Confirm Reservation
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <aside class="card">
+          <span class="badge">Info</span>
+          <h2 class="sectionTitle" style="margin-top: 12px">Before you book</h2>
+
+          <ul class="infoList">
+            <li>Arrive 10 minutes early to hold the table.</li>
+            <li>For groups (6+), please call to confirm.</li>
+            <li>Let us know allergies in the notes.</li>
+            <li>Need help? Contact: +94 XX XXX XXXX</li>
+          </ul>
+
+          <hr class="hrGlow" />
+
+          <p class="smallNote">
+            Want this form to actually work (send email / store in database)?
+            Tell me what you prefer: EmailJS, PHP, or Firebase — I’ll connect
+            it.
+          </p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
