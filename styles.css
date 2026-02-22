@@ -237,14 +237,13 @@ body {
 }
 
 .homeClass {
+  display: block;
   width: 100%;
-  object-fit: cover;
+  height: auto;
   border-radius: 12px;
   border: 1px solid rgba(209, 152, 49, 0.2);
-  width: min(1100px, 92%);
-  margin: 0 auto;
+  margin-top: 10px;
 }
-
 /*****************************/
 /*        Page Hero           */
 /*****************************/
@@ -474,6 +473,9 @@ textarea {
   }
   .navBar {
     padding: 16px 18px;
+  }
+  .homeClass {
+    height: 180px;
   }
 }
 
