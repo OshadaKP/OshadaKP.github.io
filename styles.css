@@ -476,6 +476,9 @@ textarea {
   .navBar {
     padding: 16px 18px;
   }
+  .heroSection {
+    min-height: 65vh;
+  }
   .homeClass {
     height: 200px;
   }
