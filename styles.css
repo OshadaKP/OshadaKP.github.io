@@ -7,14 +7,23 @@
   --bg-text-heading: #d19831;
   --bg-light: #000000;
   --text-dark: #ffffff;
-  --card-bg: #0f3d1e;
+  --card-bg: rgba(5, 41, 17, 0.72);
 }
 
 /*Background Colour*/
 body {
-  background-color: var(--bg-light);
   color: var(--text-dark);
   margin: 0;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("images/bg.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
 }
 
 /* Navigation Bar and Resturant Name */
@@ -213,7 +222,7 @@ body {
 }
 
 .card {
-  background: rgba(15, 61, 30, 0.72);
+  background: var(--card-bg);
   border: 1px solid rgba(209, 152, 49, 0.25);
   border-radius: 14px;
   padding: 18px;
@@ -478,6 +487,10 @@ textarea {
 /*        Responsive          */
 /*****************************/
 @media (max-width: 920px) {
+  body {
+    background-attachment: scroll;
+  }
+
   .grid2 {
     grid-template-columns: 1fr;
   }
@@ -521,9 +534,11 @@ textarea {
   #menuToggle:checked ~ .navLinks {
     display: block;
   }
+
   .heroSection {
     min-height: 65vh;
   }
+
   .homeClass {
     height: 300px;
   }
