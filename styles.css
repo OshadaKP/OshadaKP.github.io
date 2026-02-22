@@ -238,11 +238,11 @@ body {
 
 .homeClass {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   border-radius: 12px;
   border: 1px solid rgba(209, 152, 49, 0.2);
-  margin-top: 10px;
+  width: min(1100px, 92%);
+  margin: 0 auto;
 }
 
 /*****************************/
